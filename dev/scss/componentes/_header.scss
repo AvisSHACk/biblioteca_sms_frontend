@@ -1,0 +1,30 @@
+.Header {
+    background-color:$firstColor;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 20%;
+        @include from(medium) {
+            width: 5%;
+        }
+    }
+
+    &__btnMenu {
+        font-size: 2rem;
+        order: 1;
+        @include from(medium) {
+            display: none;
+        }
+    }
+
+    &__form {
+        display: flex;
+    }
+}

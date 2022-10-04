@@ -1,0 +1,14 @@
+[class*="icon-"] {
+    &::before {
+        position: relative;
+        top: 2px;
+    }
+}
+
+.l-container,
+[class^="l-container--"] {
+    width:95%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}

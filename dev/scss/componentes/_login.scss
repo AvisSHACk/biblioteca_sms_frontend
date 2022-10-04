@@ -1,0 +1,38 @@
+.Login {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+    &__img {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    &__left {
+        width:50%;
+        display: none;
+        @include from(large) {
+            display: block;
+        }
+    }
+
+    &__right {
+        background-image: url(../img/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include from(large) {
+            width: 50%;
+        }
+    }
+
+    &__logo {
+        width: 20%;
+    }
+}

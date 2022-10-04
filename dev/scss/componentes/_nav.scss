@@ -1,0 +1,58 @@
+.Nav {
+    position: fixed;
+    top: 0;
+    right: -12rem;
+    width: 12rem;
+    height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $firstColor;
+    transition: .3s right;
+    margin-right: auto;
+
+    @include from(medium) {
+        position: static;
+        width: auto;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+        background:none;
+    }
+
+    &.active {
+        right: 0;
+    }
+
+    &__menu {
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        @include from(medium) {
+            display: flex;
+        }
+    }
+
+    &__item {
+        @include from(medium) {
+            margin-left:1.5rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size:1.6rem;
+
+    }
+}
+
+body {
+    position: relative;
+    left:0;
+    transition: .3s left;
+
+    &.active {
+        left:-12rem;
+    }
+}

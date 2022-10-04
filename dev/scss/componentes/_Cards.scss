@@ -1,0 +1,18 @@
+.Cards {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.Card {
+    width: 49%;
+
+    @include from(medium) {
+        width: 32.33%;
+    }
+
+    @include from(large) {
+        width: 15.66%;
+    }
+}
