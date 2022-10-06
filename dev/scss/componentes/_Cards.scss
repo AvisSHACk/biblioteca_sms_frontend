@@ -4,11 +4,19 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    &__title {
+        i {
+            color: #795548;
+        }
+    }
 }
 
 .Card {
     width: 49%;
     margin-bottom: 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
     @include from(medium) {
         width: 32.33%;
     }
