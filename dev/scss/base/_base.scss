@@ -11,10 +11,10 @@ html {
 body {
     margin:0;
     font-size:1.6rem;
-    font-family: 'Open Sans', sans-serif;
-    background-image:url(../img/bg.png);
+    font-family: 'Poppins', sans-serif;
+    // background-image:url(../img/bg.png);
     background-size: cover;
-    background-color: #e6e6e6;
+    background-color: $textColorLight;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color:$textColor;

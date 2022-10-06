@@ -1,7 +1,8 @@
 .Header {
-    // background-color:$firstColor;
+    background-color:$firstColor;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    color:$textColorLight;
 
     &__container {
         display: flex;

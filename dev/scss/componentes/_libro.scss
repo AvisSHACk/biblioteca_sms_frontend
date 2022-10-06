@@ -1,32 +1,64 @@
 .Libro {
-
-    &__container {
+    margin-top: 2rem;
+    &__info {
+        padding: 1.4rem;
+        background-color:#Fff;
+        border-radius: 12px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        // width: 90%;
 
         @include from(medium) {
+            flex-direction: row;
             justify-content: space-between;
+            align-items: flex-start;
         }
     }
-    &__info {
-        width: 90%;
+
+    &__imagen {
+        width: 50%;
 
         @include from(medium) {
-            width:49%;
+            width:25%;
+            margin-right: 1rem;
         }
         
         @include from(large) {
-            width:30%;
+            width:20%;
         }
 
         @include from(x-large) {
             width: 18%;
         }
     }
+
     
     &__detalles {
+        margin-top: 1.6rem;
         font-size:1.5rem;
-        padding:1rem;
-        background-color:#Fff;
+        @include from(medium) {
+            margin-top: 0;
+        }
+    }
+    &__detail {
+        margin-bottom: 2rem;
+    }
+    &__buttons {
+        display: flex;
+    }
+    
+    &__button {
+        text-decoration: none;
+        border-radius: 6px;
+        margin-right: 1rem;
+        padding: 1rem 3rem;
+        background-color: $textColor;
+        color: #fff;
+    }
+
+    &__autor {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
 }
