@@ -47,15 +47,6 @@
     &__buttons {
         display: flex;
     }
-    
-    &__button {
-        text-decoration: none;
-        border-radius: 6px;
-        margin-right: 1rem;
-        padding: 1rem 3rem;
-        background-color: $textColor;
-        color: #fff;
-    }
 
     &__autor {
         margin-top: 1rem;

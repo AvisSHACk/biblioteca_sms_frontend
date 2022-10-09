@@ -1,0 +1,44 @@
+.Filtros {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    span {
+        font-size:1.6rem;
+    }
+
+    @include from(large) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__nombre {
+        margin-bottom: .8rem;
+        @include from(large) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__select {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size:1.6rem;
+        margin-bottom: 1rem;
+
+        @include from(large) {
+            padding-top: .6rem;
+            padding-bottom: .6rem;
+            margin-bottom: 0;
+            margin-right: 1.6rem;
+            margin-left: .6rem;
+            border-radius: 8px;
+        }
+    }
+
+    &__button {
+        margin-right: 0;
+        @include from(large) {
+            margin-left: .6rem;
+        }
+    }
+}

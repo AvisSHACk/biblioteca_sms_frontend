@@ -1,14 +1,12 @@
 .Nav {
     position: fixed;
-    top: 0;
-    right: -12rem;
-    width: 12rem;
-    height: 100vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: $firstColor;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(75,54,49,1) 0%, rgba(97,73,67,1) 35%);
     transition: .3s right;
     margin-right: auto;
+    z-index: 1;
 
     @include from(medium) {
         position: static;
@@ -28,21 +26,51 @@
         margin-top: 0;
         margin-bottom: 0;
         padding-left: 0;
+        display: flex;
+        justify-content: space-between;
 
         @include from(medium) {
-            display: flex;
         }
     }
 
     &__item {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+
+        &.active {
+            background-color: $firstColor;
+            @include from(medium) {
+                background: none;
+            }
+        }
         @include from(medium) {
             margin-left:1.5rem;
         }
     }
 
     &__link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         text-decoration: none;
         font-size:1.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            margin-bottom: .4rem;
+        }
+
+        @include from(medium){
+            flex-direction: row;
+            
+            &::before {
+                margin-right: .6rem;
+                margin-bottom: 0;
+            }
+        }
 
     }
 }

@@ -9,107 +9,153 @@
     <!-- <link href="https://file.myfontastic.com/pGLf7EgPbBWMvdwq9PKfDo/icons.css" rel="stylesheet"> -->
 </head>
 <body>
-	<header class="Header">
+    <header class="Header">
         <div class="l-container Header__container">
-            <a href="index.html" class="Header__logo">
+            <a href="#" class="Header__logo">
                 <img src="img/logo.png" alt="">
             </a>
-            <div class="icon-bars Header__btnMenu"></div>
+            <div class="icon-moon Header__changeTheme"></div>
             <nav class="Nav">
                 <ul class="Nav__menu">
-                    <li class="Nav__item"><a href="#" class="Nav__link">Inicio</a></li>
-                    <li class="Nav__item"><a href="#" class="Nav__link">Categorias</a></li>
+                    <li class="Nav__item active"><a href="#" class="Nav__link icon-home">Inicio</a></li>
+                    <li class="Nav__item"><a href="#" class="Nav__link icon-book">Categorias</a></li>
                 </ul>
             </nav>
             <form action="" class="Form--search Header__form">
-                <input class="Form__input--search" type="search" name="buscar" id="buscar">
+                <input class="Form__input--search" type="search" name="buscar" id="buscar" placeholder="Busca tu libro">
                 <button class="Form__button--search icon-search" type="submit"></button>
             </form>
+            <div class="User">
+                <div class="user__Cimage">
+                    <img class="User__image" src="img/user.jpg" alt="">
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <div class="l-container">
-            <h3 class="h3 icon-star">Categorias</h3>
+            <h3 class="h3 icon-star">Categorias </h3>
             <form class="Filtros" method="POST">
-                <label for="generos" class="Filtro__nombre">Tipo:</label>
-                <select class="Filtro__select" name="generos" id="generos">
-                    <option class="Filtro__opcion" value="accion">Obra</option>
-                    <option class="Filtro__opcion" value="ciencia-ficcion">Novelas</option>
-                    <option class="Filtro__opcion" value="comedia">Educacion</option>
-                    <option class="Filtro__opcion" value="drama">Historia</option>
+                <label for="generos" class="Filtros__nombre">Tipo:</label>
+                <select class="Filtros__select" name="generos" id="generos">
+                    <option class="Filtros__opcion" value="accion">Obra</option>
+                    <option class="Filtros__opcion" value="ciencia-ficcion">Novelas</option>
+                    <option class="Filtros__opcion" value="comedia">Educacion</option>
+                    <option class="Filtros__opcion" value="drama">Historia</option>
                 </select>
         
-                <label for="tipo" class="Filtro__nombre">Autor:</label>
-                <select class="Filtro__select" name="tipos" id="tipos">
-                    <option class="Filtro__opcion" value="serie">Mario vargas llosa</option>
+                <label for="tipo" class="Filtros__nombre">Autor:</label>
+                <select class="Filtros__select" name="tipos" id="tipos">
+                    <option class="Filtros__opcion" value="serie">Mario vargas llosa</option>
                 </select>
         
-                <label for="año" class="Filtro__nombre">Año:</label>
-                <select class="Filtro__select" name="año" id="año">
-                    <option class="Filtro__opcion" value="2019">2019</option>
-                    <option class="Filtro__opcion" value="2020">2020</option>
-                    <option class="Filtro__opcion" value="2021">2021</option>
-                    <option class="Filtro__opcion" value="2022">2022</option>
+                <label for="año" class="Filtros__nombre">Año:</label>
+                <select class="Filtros__select" name="año" id="año">
+                    <option class="Filtros__opcion" value="2019">2019</option>
+                    <option class="Filtros__opcion" value="2020">2020</option>
+                    <option class="Filtros__opcion" value="2021">2021</option>
+                    <option class="Filtros__opcion" value="2022">2022</option>
                 </select>
         
-                <button class="Filtro__button">Filtrar</button>
+                <button class="Filtros__button Button--black">Filtrar</button>
             </form>
             <div class="Cards">
                 <div class="Cards__container">
                     <article class="Card">
-                        <a href="leerlibro.html">
-                            <img src="img/matematica.webp" alt="">
-                        </a>
-                            <!-- <div class="Card__info">
-    
-                            </div> -->
+                        <div class="Card__container">
+                            <div class="Card__cimage">
+                                <img src="img/matematica.webp" alt="">
+                            </div>
+                            <div class="Card__info">
+                                <h3>Matematica 1</h3>
+                                <p class="Card__description">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, iusto officia enim excepturi 
+                                    similique velit quasi voluptates, ipsum quidem sint beatae porro dignissimos reiciendis! Odit 
+                                </p>
+                                <a href="leerlibro.html" class="Card__button Button--black">Leer</a>
+                            </div>
+                        <div>
                     </article>
 
                     <article class="Card">
-                        <a href="leerlibro.html">
-                            <img src="img/matematica.webp" alt="">
-                        </a>
-                            <!-- <div class="Card__info">
-    
-                            </div> -->
+                        <div class="Card__container">
+                            <div class="Card__cimage">
+                                <img src="img/matematica.webp" alt="">
+                            </div>
+                            <div class="Card__info">
+                                <h3>Matematica 1</h3>
+                                <p class="Card__description">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, iusto officia enim excepturi 
+                                    similique velit quasi voluptates, ipsum quidem sint beatae porro dignissimos reiciendis! Odit 
+                                </p>
+                                <a href="leerlibro.html" class="Card__button Button--black">Leer</a>
+                            </div>
+                        <div>
                     </article>
 
                     <article class="Card">
-                        <a href="leerlibro.html">
-                            <img src="img/matematica.webp" alt="">
-                        </a>
-                            <!-- <div class="Card__info">
-    
-                            </div> -->
+                        <div class="Card__container">
+                            <div class="Card__cimage">
+                                <img src="img/matematica.webp" alt="">
+                            </div>
+                            <div class="Card__info">
+                                <h3>Matematica 1</h3>
+                                <p class="Card__description">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, iusto officia enim excepturi 
+                                    similique velit quasi voluptates, ipsum quidem sint beatae porro dignissimos reiciendis! Odit 
+                                </p>
+                                <a href="leerlibro.html" class="Card__button Button--black">Leer</a>
+                            </div>
+                        <div>
                     </article>
 
                     <article class="Card">
-                        <a href="leerlibro.html">
-                            <img src="img/matematica.webp" alt="">
-                        </a>
-                            <!-- <div class="Card__info">
-    
-                            </div> -->
+                        <div class="Card__container">
+                            <div class="Card__cimage">
+                                <img src="img/matematica.webp" alt="">
+                            </div>
+                            <div class="Card__info">
+                                <h3>Matematica 1</h3>
+                                <p class="Card__description">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, iusto officia enim excepturi 
+                                    similique velit quasi voluptates, ipsum quidem sint beatae porro dignissimos reiciendis! Odit 
+                                </p>
+                                <a href="leerlibro.html" class="Card__button Button--black">Leer</a>
+                            </div>
+                        <div>
                     </article>
 
                     <article class="Card">
-                        <a href="leerlibro.html">
-                            <img src="img/matematica.webp" alt="">
-                        </a>
-                            <!-- <div class="Card__info">
-    
-                            </div> -->
+                        <div class="Card__container">
+                            <div class="Card__cimage">
+                                <img src="img/matematica.webp" alt="">
+                            </div>
+                            <div class="Card__info">
+                                <h3>Matematica 1</h3>
+                                <p class="Card__description">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, iusto officia enim excepturi 
+                                    similique velit quasi voluptates, ipsum quidem sint beatae porro dignissimos reiciendis! Odit 
+                                </p>
+                                <a href="leerlibro.html" class="Card__button Button--black">Leer</a>
+                            </div>
+                        <div>
                     </article>
 
                     <article class="Card">
-                        <a href="leerlibro.html">
-                            <img src="img/matematica.webp" alt="">
-                        </a>
-                            <!-- <div class="Card__info">
-    
-                            </div> -->
+                        <div class="Card__container">
+                            <div class="Card__cimage">
+                                <img src="img/matematica.webp" alt="">
+                            </div>
+                            <div class="Card__info">
+                                <h3>Matematica 1</h3>
+                                <p class="Card__description">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, iusto officia enim excepturi 
+                                    similique velit quasi voluptates, ipsum quidem sint beatae porro dignissimos reiciendis! Odit 
+                                </p>
+                                <a href="leerlibro.html" class="Card__button Button--black">Leer</a>
+                            </div>
+                        <div>
                     </article>
-                    </div>
                 </div>
             </div>
 

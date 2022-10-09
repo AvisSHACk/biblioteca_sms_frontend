@@ -1,5 +1,5 @@
 .Header {
-    background-color:$firstColor;
+    background: linear-gradient(90deg, rgba(75,54,49,1) 0%, rgba(97,73,67,1) 35%);
     padding-top: 1rem;
     padding-bottom: 1rem;
     color:$textColorLight;
@@ -11,21 +11,28 @@
     }
 
     &__logo {
-        width: 20%;
-        @include from(medium) {
+        width: 15%;
+        @include from(small) {
+            width: 10%;
+        }
+
+        @include from(large) {
             width: 5%;
         }
     }
 
-    &__btnMenu {
+    &__changeTheme {
         font-size: 2rem;
         order: 1;
-        @include from(medium) {
-            display: none;
-        }
+        margin-left: 1rem;
     }
 
     &__form {
         display: flex;
+        flex-grow: 1;
+
+        @include from(medium) {
+            flex-grow: 0;
+        }
     }
 }

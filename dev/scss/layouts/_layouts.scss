@@ -1,9 +1,9 @@
-[class*="icon-"] {
-    &::before {
-        position: relative;
-        top: 2px;
-    }
-}
+// [class*="icon-"] {
+//     &::before {
+//         position: relative;
+//         top: 2px;
+//     }
+// }
 
 .l-container,
 [class^="l-container--"] {
@@ -11,4 +11,17 @@
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.Button,
+[class*="Button--"] {
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 1rem;
+    padding: 1rem 3rem;
+}
+
+.Button--black {
+    background-color: $textColor;
+    color: #fff;
 }
