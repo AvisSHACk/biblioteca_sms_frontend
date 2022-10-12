@@ -1,5 +1,6 @@
 .Header {
-    background: linear-gradient(90deg, rgba(75,54,49,1) 0%, rgba(97,73,67,1) 35%);
+    // background: linear-gradient(90deg, rgba(75,54,49,1) 0%, rgba(97,73,67,1) 35%);
+    background-color: $firstColor;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color:$textColorLight;
@@ -8,6 +9,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
 
     &__logo {
@@ -23,8 +25,7 @@
 
     &__changeTheme {
         font-size: 2rem;
-        order: 1;
-        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     &__form {

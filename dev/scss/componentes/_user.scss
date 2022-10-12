@@ -1,15 +1,78 @@
 .User {
-    width: 40px;
-    height: 40px;
-    border: 2px solid transparent;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-
-    &:hover {
-        border: 2px solid #fff;
-    }
-    &__image {
+    &__cimage {
+        width: 40px;
+        height: 40px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        overflow: hidden;
         background: #fff;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid #fff;
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        right: 0;
+        background-color: $firstColor;
+        display: none;
+        z-index: 1;
+
+        &.active {
+            display: block;
+        }
+
+        @include from(medium) {
+            width: auto;
+            background-color: #F3F3F3;
+            color: #000;
+        }
+    }
+
+    &__ul {
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding: 1.8rem 1.5rem;
+
+        position: relative;
+
+        @include from(medium) {
+
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                background-color: #000;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: rotate(45deg) translate(-50%);
+                background-color: #F3F3F3;
+
+            }
+        }
+    }
+
+    &__item {
+        margin-bottom: 1.6rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &::before {
+            position: relative;
+            top: 2px;
+            margin-right: .4rem;
+        }
     }
 }

@@ -3,7 +3,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(90deg, rgba(75,54,49,1) 0%, rgba(97,73,67,1) 35%);
+    background-color: $firstColor;
     transition: .3s right;
     margin-right: auto;
     z-index: 1;
@@ -40,7 +40,7 @@
         align-items: center;
 
         &.active {
-            background-color: $firstColor;
+            background-color: darken($firstColor, 10%);
             @include from(medium) {
                 background: none;
             }
@@ -72,15 +72,5 @@
             }
         }
 
-    }
-}
-
-body {
-    position: relative;
-    left:0;
-    transition: .3s left;
-
-    &.active {
-        left:-12rem;
     }
 }

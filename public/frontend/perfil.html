@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca | Registrate</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://file.myfontastic.com/pGLf7EgPbBWMvdwq9PKfDo/icons.css" rel="stylesheet">
+</head>
+<body>
+    <header class="Header">
+        <div class="l-container Header__container">
+            <a href="index.html" class="Header__logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <nav class="Nav">
+                <ul class="Nav__menu">
+                    <li class="Nav__item active"><a href="index.html" class="Nav__link icon-home">Inicio</a></li>
+                    <li class="Nav__item"><a href="categorias.html" class="Nav__link icon-book">Categorias</a></li>
+                </ul>
+            </nav>
+            <form action="" class="Form--search Header__form">
+                <input class="Form__input--search" type="search" name="buscar" id="buscar" placeholder="Busca tu libro">
+                <button class="Form__button--search icon-search" type="submit"></button>
+            </form>
+            <div class="icon-moon Header__changeTheme"></div>
+            <div class="User">
+                <div class="User__cimage">
+                    <img class="User__image" src="img/user.jpg" alt="">
+                </div>
+                <div class="User__menu">
+
+                    <nav class="User__nav">
+                        <ul class="User__ul">
+                            <li class="User__item"><a class="User__link icon-user" href="perfil.html">Mi perfil</a></li>
+                            <li class="User__item"><a class="User__link icon-futbol" href="#">Mis prestamos</a></li>
+                            <li class="User__item"><a class="User__link icon-cerrar" href="#">Cerrar sesion</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="l-container">
+            <div class="EditarPerfil">
+                <h2 class="EditarPerfil__title">Edita tu perfil</h2>
+                <form action="" method="post">
+                    <div class="EditarPerfil__info">
+                        <label for="foto" class="EditarPerfil__label EditarPerfil__image">
+                            <img src="img/user.jpg" alt="">
+                            <input class="EditarPerfil__input" type="file">
+                        </label>
+                    <div class="EditarPerfil__info">
+                        <label for="nombre" class="EditarPerfil__label">Nombres:</label>
+                        <input class="EditarPerfil__input" type="text" name="nombre" id="nombre" value="Anthony Victor">
+                    </div>
+                    <div class="EditarPerfil__info">
+                        <label for="apellidos" class="EditarPerfil__label">Apellidos:</label>
+                        <input class="EditarPerfil__input" type="text" name="apellidos" id="apellidos" value="Serquén Sevilla">
+                    </div>
+                    <div class="EditarPerfil__info">
+                        <label for="grado" class="EditarPerfil__label">Grado:</label>
+                        <input class="EditarPerfil__input" type="number" name="grado" id="grado" value="3">
+                    </div>
+                    <div class="EditarPerfil__info">
+                        <label for="seccion" class="EditarPerfil__label">Seccion:</label>
+                            <input class="EditarPerfil__input" type="text" name="seccion" id="seccion" value="A">
+                    </div>
+                    <div class="EditarPerfil__info">
+                        <label for="email" class="EditarPerfil__label">Email:</label>
+                        <input class="EditarPerfil__input" type="email" name="email" id="email" value="correo@correo.com">
+                    </div>
+                    <div class="EditarPerfil__info">
+                        <label for="contrasena" class="EditarPerfil__label">contraseÑa:</label>
+                        <input class="EditarPerfil__input" type="password" name="contrasena" id="contrasena" value="dasdasds">
+                    </div>
+                    <button type="submit" class="EditarPerfil__button Button--black">Actualizar datos</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="js/index..js"></script>
+</body>
+</html>

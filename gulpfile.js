@@ -23,10 +23,10 @@ gulp.task('sass', function(){
 
 gulp.task('default', function(){
     browserSync.init({
-        server: "./public"
+        server: "./public/frontend/"
     })
 })
 
 gulp.watch('./dev/scss/**/*.scss', gulp.series('sass'));
-gulp.watch('./public/**.html').on("change", browserSync.reload);
-gulp.watch('./public/js/**.js').on("change", browserSync.reload);
+gulp.watch('./public/frontend/**.html').on("change", browserSync.reload);
+gulp.watch('./public/frontend/js/**.js').on("change", browserSync.reload);
